@@ -6,7 +6,7 @@
     width: 100%;
     padding-left: 30px;
     margin: auto;
-    height: 60px;
+    height: 90px;
     border-bottom: 1px solid grey;
     display: flex;
     align-items: center;
@@ -60,12 +60,55 @@
     }
 
     .paiement {
-      height: 180px;
-      flex: 30%;
+      height: 200px;
+      width: 365px;
+      position: sticky;
+      top: 20px;
       border-radius: 10px;
       margin-right: 30px;
       background-color: white;
       display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .total {
+        height: 30px;
+        border: 2px black solid;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .descriptif-commande {
+        border-bottom: 2px solid grey;
+        margin: auto;
+        width: 250px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        .counter {
+          display: flex;
+          width: 50px;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 15px;
+            width: 15px;
+            color: white;
+            background-color: #00cdbd;
+          }
+        }
+        span {
+          font-size: 11px;
+        }
+      }
 
       .bouton-paiement {
         width: 90%;
@@ -142,6 +185,17 @@
         }
       }
     }
+  }
+  .footer-app {
+    height: 60px;
+    width: auto;
+    font-size: 10px;
+    background-color: #00cdbd;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .box:hover {
